@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const Listing = require("./models/listing.js");
 
 //iii) DB connection
 // Doc(Quick Start) : https://mongoosejs.com/docs/index.html
@@ -22,6 +23,22 @@ main()
 app.get("/", (req, res) => {
   res.send("Hi, I am root at http://localhost:8080");
 });
+
+// //Creating a route to TEST our first model at : 
+// // http://localhost:8080/testlisting
+// app.get("/testListing", async (req, res) => {
+//      let sampleListing = new Listing({
+//      title: "My New Villa",
+//      description: "By the beach",
+//      price: 1200,
+//      location: "Calangute, Goa",
+//      country: "India",
+//   });
+
+//    await sampleListing.save();
+//    console.log("sample was saved");
+//    res.send("successful testing");
+// });
 
 // i)To make the server listening
 app.listen(8080, () => {
