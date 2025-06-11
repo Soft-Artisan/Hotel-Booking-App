@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const Listing = require("./models/listing.js");
+const path = require("path");
 
 //iii) DB connection
 // Doc(Quick Start) : https://mongoosejs.com/docs/index.html
@@ -23,6 +24,19 @@ main()
 app.get("/", (req, res) => {
   res.send("Hi, I am root at http://localhost:8080");
 });
+
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
+
+
+//Index Route
+app.get("/listings", async (req, res) => {
+  const allListings = await Listing.find({});
+  res.render("listings/index.ejs", { allListings });
+});
+
+
+
 
 // //Creating a route to TEST our first model at : 
 // // http://localhost:8080/testlisting
