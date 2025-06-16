@@ -13,3 +13,4 @@ views/listings/edit.ejs
 views/listings/index.ejs
 views/listings/new.ejs
 views/listings/show.ejs
+.......... * Branch # 2 : Adding_style *.............
