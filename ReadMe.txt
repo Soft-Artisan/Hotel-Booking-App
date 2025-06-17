@@ -28,4 +28,7 @@ and in any other file to use it we write :
 <% layout("/layouts/boilerplate") %>
 Create (in main folder): public/css/style.css , working check.
 * NavBar *
+* Footer *
+
+
 
