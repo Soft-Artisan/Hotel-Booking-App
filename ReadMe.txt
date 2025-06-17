@@ -27,3 +27,5 @@ Create   views/layouts/boilerplate.ejs and code like :
 and in any other file to use it we write :
 <% layout("/layouts/boilerplate") %>
 Create (in main folder): public/css/style.css , working check.
+* NavBar *
+
