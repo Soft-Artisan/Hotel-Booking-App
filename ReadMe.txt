@@ -31,3 +31,9 @@ Create (in main folder): public/css/style.css , working check.
 * NavBar *
 added : BootStrap in the boilerplate.ejs
 created : views/includes/navbar.ejs
+
+* Footer *
+created : views/includes/footer.ejs
+and the necessary changes in the style.css and boilerplate.ejs
+using 'fontawesome' for the social media.
+
